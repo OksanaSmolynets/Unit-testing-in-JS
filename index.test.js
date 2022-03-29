@@ -39,12 +39,12 @@ describe('isPalindromNumber function', () => {
 describe('palindromOfNumSquare function', () => {
     test('palindromOfNumSquare is equal', () => {
         expect(palindromOfNumSquare()).toContain(1);
-        expect(palindromOfNumSquare()).toContain(121);
-        expect(palindromOfNumSquare()).toContain(484);
-        expect(palindromOfNumSquare()).toContain(4);
+        expect(palindromOfNumSquare()).toContain(11);
+        expect(palindromOfNumSquare()).toContain(22);
+        expect(palindromOfNumSquare()).toContain(2);
         expect(palindromOfNumSquare()[0]).toBe(1);
         expect(palindromOfNumSquare()[1]).toBeGreaterThan(1);
-        expect(palindromOfNumSquare()).toEqual(expect.arrayContaining([1, 4, 9, 121, 484]));
+        expect(palindromOfNumSquare()).toEqual(expect.arrayContaining([1, 2, 3, 11, 22]));
     });
     test('palindromOfNumSquare logic', () => {
         expect(palindromOfNumSquare().some((item => item === 1))).toBe(true);

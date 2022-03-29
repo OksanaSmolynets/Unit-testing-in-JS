@@ -39,9 +39,10 @@ let palindromOfNumSquare = () => {
         .map(item => Math.pow(isPalindromNumber(item), 2));
 
     // choose from the squares of palindromes palindromes
-    let palindronNumInPower = palindromToPower.filter(item => isPalindromNumber(item))
-    console.log(palindronNumInPower);
-    return palindronNumInPower;
+    let palindronNum = palindromToPower.filter(item => isPalindromNumber(item))
+                              .map(item => Math.sqrt(item))
+    console.log(palindronNum);    
+    return palindronNum;
 }
 
 palindromOfNumSquare();
